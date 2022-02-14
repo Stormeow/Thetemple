@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Храм Анны Богдановой</title>
+	<style type="text/css">
+		@font-face {
+
+			font-family: pobeda;
+			src: url(fonts/pobeda-bold1.ttf);
+		}
+
+		@font-face {
+			font-family: muller;
+			src: url(fonts/53e59-muller-extrabold-demo.ttf);
+		}
+
+		@font-face {
+			font-family: adlery;
+			src: url(fonts/AdleryProSwash.ttf);
+		}
+
+		body {
+			display: flex;
+			background: url(images/background.jpg);
+		}
+
+		.main{
+			margin-left: 140px;
+			flex-direction: row;
+		}
+
+		.rightside {
+			flex-direction: row;
+			justify-content: flex-start;
+		}
+
+		.leftside {
+			flex-direction: row;
+			justify-content: flex-end;
+		}
+
+		#main{
+
+			border: 5px solid #00BFFF;
+			padding: 12px;
+			background: url(images/texture5.jpg);
+		}
+
+		#hello {
+
+			font-family: pobeda;
+			text-shadow: 
+		-0   -2px 2px #00BFFF,
+		 0   -2px 2px #00BFFF,
+		-0    2px 2px #00BFFF,
+		 0    2px 2px #00BFFF,
+		-2px -0   2px #00BFFF,
+		 2px -0   2px #00BFFF,
+		-2px  0   2px #00BFFF,
+		 2px  0   2px #00BFFF,
+		-1px -2px 2px #00BFFF,
+		 1px -2px 2px #00BFFF,
+		-1px  2px 2px #00BFFF,
+		 1px  2px 2px #00BFFF,
+		-2px -1px 2px #00BFFF,
+		 2px -1px 2px #00BFFF,
+		-2px  1px 2px #00BFFF,
+		 2px  1px 2px #00BFFF,
+		-2px -2px 2px #00BFFF,
+		 2px -2px 2px #00BFFF,
+		-2px  2px 2px #00BFFF,
+		 2px  2px 2px #00BFFF,
+		-2px -2px 2px #00BFFF,
+		 2px -2px 2px #00BFFF,
+		-2px  2px 2px #00BFFF,
+		 2px  2px 2px #00BFFF;		
+		 font-size: 54px;
+			color: #FAEBD7;
+		}
+
+		#itsme {
+
+			font-family: muller;
+			font-size: 23px;
+			color: #FAEBD7;
+				text-shadow: 
+		-0   -1px 1px #00BFFF,
+		 0   -1px 1px #00BFFF,
+		-0    1px 1px #00BFFF,
+		 0    1px 1px #00BFFF,
+		-1px -0   1px #00BFFF,
+		 1px -0   1px #00BFFF,
+		-1px  0   1px #00BFFF,
+		 1px  0   1px #00BFFF,
+		-1px -1px 1px #00BFFF,
+		 1px -1px 1px #00BFFF,
+		-1px  1px 1px #00BFFF,
+		 1px  1px 1px #00BFFF,
+		-1px -1px 1px #00BFFF,
+		 1px -1px 1px #00BFFF,
+		-1px  1px 1px #00BFFF,
+		 1px  1px 1px #00BFFF;
+		}
+
+		p {
+			text-overflow: clip;
+		}
+
+		#block1 {
+        	width: 150px;
+        	border: 5px solid #00BFFF;
+			padding: 12px;
+			background: url(images/texture2.jpg);
+        }
+
+        #text {
+		font-family: adlery;
+		font-size: 14px;
+
+        }
+
+        #block2 {
+        	margin-left: 90px;
+        	width: 240px;
+        	border: 5px solid #00BFFF;
+			padding: 12px;
+			background: url(images/texture2.jpg);
+        }
+
+        #block2 img {
+        	border: 3px solid #00BFFF;
+        }
+
+        #me {
+
+			font-family: muller;
+			font-size: 21px;
+			color: #FAEBD7;
+				text-shadow: 
+		-0   -1px 1px #00BFFF,
+		 0   -1px 1px #00BFFF,
+		-0    1px 1px #00BFFF,
+		 0    1px 1px #00BFFF,
+		-1px -0   1px #00BFFF,
+		 1px -0   1px #00BFFF,
+		-1px  0   1px #00BFFF,
+		 1px  0   1px #00BFFF,
+		-1px -1px 1px #00BFFF,
+		 1px -1px 1px #00BFFF,
+		-1px  1px 1px #00BFFF,
+		 1px  1px 1px #00BFFF,
+		-1px -1px 1px #00BFFF,
+		 1px -1px 1px #00BFFF,
+		-1px  1px 1px #00BFFF,
+		 1px  1px 1px #00BFFF;
+		}
+
+		.br a {
+			font-family: muller;
+			color: black;
+		}
+
+		.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    border-bottom: 1px solid #00BFFF;
+		}
+
+		.menu a {
+			display: block;
+			border-top: 1px solid #00BFFF;
+			font-family: muller;
+			text-decoration: none;
+			color: 	#00BFFF;
+
+		}
+
+	</style>
+</head>
+<body>
+	<div class="rightside">
+		<div id="block1">
+			<h2 id="itsme"><strong>НАВИГАЦИЯ</strong></h2>
+			<ul class="menu">
+  			<li><a href="description.html">Описание сайта</a></li>
+  			<li><a href="rules.html">Учение нашего бога</a></li>
+  			<li><a href="1.html" target="blank">Притча первая</a></li>
+  			<li><a href="2.html" target="blank">Притча вторая</a></li>
+  			<li><a href="god.html">Обращение к богу</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+		<div id="main">
+			<img src="images/anna.jpg" width="570px" alt="богиня во всей красе" class="scale">
+			<h1 id="hello"><strong>ХРАМ БОГИНИ АННЫ БОГДАНОВОЙ</strong></h1>
+		</div>
+	</div>
+	</div>
+	<div class="leftside">
+		<div id="block2">
+			<img src="images/anna2.png" width="240" alt="богиня" border="3" >
+			<h1 id="me">Связаться с богом</h1>
+			<ul class="br">
+  			<li><a href="https://vk.com/anna_radon" target="blank">VK</a></li>
+  			<li><a href="https://discord.com/channels/880605472380567612/880605472854536195" target="blank">Discord</a></li>
+  			<li><a href="https://www.instagram.com/_any_pistoletova_/" target="blank">Instagram</a></li>
+			</ul>
+			<img src="images/me.jpg" width="240" alt="моя фотография">
+			<h1 id="me">Связаться с создателем</h1>
+			<ul class="br">
+  			<li><a href="https://vk.com/rk248" target="blank">VK</a></li>
+  			<li><a href="https://discord.com/channels/880605472380567612/880605472854536195" target="blank">Discord</a></li>
+  			<li><a href="https://www.instagram.com/bigorillaq/" target="blank">Instagram</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
